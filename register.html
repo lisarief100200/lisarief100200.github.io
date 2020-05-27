@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <title>Register Form</title>
+
+    <!--CSS-->
+    <link rel = "stylesheet" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <div class="navbar">
+      <nav class="blue-grey darken-2">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"><img src="img/logo.png" width="300" height="63"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown-about" href="#about">
+                About Us <i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown-job" href="job.html">
+                Job Board <i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown-join" href="#join">
+                Join <i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li><a href="structure.html">Organizational Structure</a></li>
+            <li><a href="dev_info.html">Dev_Info</a></li>
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown-page" href="#">
+                Admin or Member Page Demo<i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li><a href="login.html">Login | Register</a></li>
+          </ul>
+
+          <!--Dropdown-->
+          <ul id="dropdown-about" class="dropdown-content">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="profile.html">Company Profile</a></li>
+            <li><a href="goal.html">Site Goals</a></li>
+          </ul>
+
+          <ul id="dropdown-job" class="dropdown-content">
+            <li><a href="job.html">Job Board</a></li>
+            <li><a href="jobsworkflow.html">Jobs Workflow</a></li>
+          </ul>
+
+          <ul id="dropdown-join" class="dropdown-content">
+            <li><a href="join.html">Join</a></li>
+            <li><a href="benefit.html">Benefit</a></li>
+            <li><a href="criteria.html">Criteria</a></li>
+          </ul>
+
+          <ul id="dropdown-page" class="dropdown-content">
+            <li><a href="admin_page.html">Admin Page</a></li>
+            <li><a href="member_page.html">Member Page</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+
+    <!--SideNavbar-->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html"><i class="material-icons right">arrow_drop_down</i>About Us</a></li>
+      <li><a href="profile.html">‣   Company Profile</a></li>
+      <li><a href="goal.html">‣   Goals</a></li>
+      <li><a href="job.html"><i class="material-icons right">arrow_drop_down</i>Job Board</a></li>
+      <li><a href="jobsworkflow.html">‣   Jobs Worksflow</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="benefit.html">‣   Benefit</a></li>
+      <li><a href="criteria.html">‣   Criteria</a></li>
+      <li><a href="structure.html">Organizational Structure</a></li>
+      <li><a href="dev_info.html">Dev_Info</a></li>
+      <li><a href="#page">Admin or Member Page Demo</a></li>
+      <li><a href="admin_page.html">‣   Admin Page</a></li>
+      <li><a href="member_page.html">‣   Member Page</a></li>
+      <li><a href="login.html">Login / Register</a></li>
+    </ul>
+
+    <!--Register Form-->
+    <div id = "register" class="row">
+        <div class="row">
+          <div class="container">
+          <form class="col s12">
+          <h5 align="center"><b>Register</b></h5>
+          <h6>Register form handling with Toast by clicking the register button below.</h6>
+          <div class="row">
+            <div class="input-field col s12">
+              <input id="nik" type="number">
+              <label for="nik">NIK</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input id="first_name" type="text">
+              <label for="first_name">First Name</label>
+            </div>
+
+            <div class="input-field col s6">
+              <input id="last_name" type="text">
+              <label for="last_name">Last Name</label>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="username" type="text">
+              <label for="username">*Username</label>
+            </div>   
+
+            <div class="input-field col s4">
+              <input id="password" type="password">
+              <label for="password">*Password</label>
+            </div>
+
+            <div class="input-field col s4">
+              <input id="password2" type="password">
+              <label for="password2">*Confirm Password</label>
+            </div>
+
+            <div class="input-field col s4">
+              <input class="cyan darken-4 btn modal-trigger" href="#modal1" value="Check">
+
+
+              <!-- Modal Structure -->
+              <div id="modal1" class="modal">
+                <div class="modal-content">
+                  <h4>How to Validate Password Strength</h4>
+                  <p>• Password must be at least 8 characters in length.</p>
+                  <p>• Password must include at least one upper case letter.</p>
+                  <p>• Password must include at least one lower case letter.</p>
+                  <p>• Password must include at least one number.</p>
+                  <p>• Password must include at least one special character.</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
+                </div>
+              </div>    
+            </div>   
+
+            <div class="input-field col s12">
+              <input id="birthdate" type="text" class="datepicker">
+              <label for="birthdate">Birthdate</label>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="profession" type="text">
+              <label for="profession">Profession</label>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="address" type="text">
+              <label for="address">*Address</label>
+            </div>
+
+            <div class="input-field col s6">
+              <select>
+                <option value="" disabled selected>Choose Your Member Type</option>
+                <option value="1">Member</option>
+                <option value="2">Civilian</option>
+              </select>
+              <label>Member Type</label>
+            </div>
+
+            <div class="input-field col s6">
+              <select>
+                <option value="" disabled selected>Choose Your Period</option>
+                <option value="1">1 Month</option>
+                <option value="2">3 Months</option>
+                <option value="2">6 Months</option>
+                <option value="2">12 Months</option>
+              </select>
+              <label>Join Period</label>
+            </div>
+
+            <div class="input-field col s12">
+              <input id="codename" type="text">
+              <label for="codename">Codename</label>
+            </div>
+
+            <div class="input-field col s12 light">
+              <h6><b>- Skillset -</b></h6>
+            </div>
+
+            <div class="input-field col s6">
+              <h6><b>Leadership</b></h6>
+            </div>
+
+            <div class="input-field col s6">
+              <form action="#">
+                <p class="range-field">
+                  <input type="range" id="leadership" min="0" max="100" />
+                </p>
+              </form>
+            </div>
+
+            <div class="input-field col s6">
+              <h6><b>Creativity</b></h6>
+            </div>
+
+            <div class="input-field col s6">
+              <form action="#">
+                <p class="range-field">
+                  <input type="range" id="creativity" min="0" max="100" />
+                </p>
+              </form>
+            </div>
+
+            <div class="input-field col s6">
+              <h6><b>Ability to work as a part of team</b></h6>
+            </div>
+
+            <div class="input-field col s6">
+              <form action="#">
+                <p class="range-field">
+                  <input type="range" id="teamwork" min="0" max="100" />
+                </p>
+              </form>
+            </div>
+          </div>
+          </form>
+          </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <select id="select-country">
+            <option value="" disabled selected>Choose Your Country</option>
+            <option value="ID">(+62) Indonesia</option>
+            <option value="PH">(+63) Philippines</option>
+            <option value="SG">(+65) Singapore</option>
+            <option value="TH">(+66) Thailand</option>
+        </select>
+        <input id="input-phone-tele" type="text" placeholder="ex : +62812321312">
+
+        <select id="select-country">
+            <option value="" disabled selected>Choose Your Country</option>
+            <option value="ID">(+62) Indonesia</option>
+        </select>
+        <input id="input-phone-hand" type="text" placeholder="ex : +62812321312">
+
+        <b><p>*Upload your ID Card/KTP</p></b>
+        <form action="#">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>File</span>
+              <input id="ktp" type="file" accept="image/*">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+        </form>
+
+        <form name="random_pass" method="post" action="">
+          <input name="row_password" type="text" size="40">
+          <input type="button" class="button" value="Generate Random Password (copy this)" onClick="randomPassword(10);" tabindex="2">
+        </form>
+
+        <br>
+        <p>*Required Fields</p>
+
+        <div class="right-align">
+          <input class="btn cyan darken-4" id="validate_register" value="register" type="submit">
+        </div>
+        <br>
+    </div>
+
+    <!--Footer-->
+    <footer class="blue-grey darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text"></h5>
+            <a href="#!" class="brand-logo"><img src="img/logo-1.png" width="300" height="63"></a>
+            <p class="grey-text text-lighten-4">Address :</p>
+            <p class="grey-text text-lighten-4">Guildhouse#1333</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Follow Us</h5>
+            <ul>
+              <img src="img/facebook.png" class="vertical-middle" width="15%"><img src="img/instagram.png" class="vertical-middle" width="15%"><img src="img/discord.png" class="vertical-middle" width="14%">
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <b>Made by Lisa Arief
+            All right reserved.</b>
+        </div>
+      </div>
+    </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/script_register.js"></script>
+    <script>
+      const sideNav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav,{});
+
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax,{});
+
+      const scrollspy = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scrollspy,{});
+
+      const dropdown = document.querySelectorAll('.dropdown-trigger')
+      M.Dropdown.init(dropdown,{});
+
+      const select = document.querySelectorAll('select');
+      M.FormSelect.init(select,{});
+
+      const datepicker = document.querySelectorAll('.datepicker');
+      M.Datepicker.init(datepicker,{});
+
+      const modal = document.querySelectorAll('.modal');
+      M.Modal.init(modal,{});
+    </script>
+  </body>
+</html>

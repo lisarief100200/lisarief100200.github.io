@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>Millioti</title>
+
+    <!--CSS-->
+    <link rel = "stylesheet" href="css/style.css">
+
+    <!--Icon-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!--Register-->
+    <link rel = "stylesheet" href="js/register.html">
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <div class="navbar">
+      <nav class="blue-grey darken-2">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo"><img src="img/logo.png" width="300" height="63"></a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown-about" href="#about">
+                About Us <i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown-job" href="job.html">
+                Job Board <i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown-join" href="#join">
+                Join <i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li><a href="structure.html">Organizational Structure</a></li>
+            <li><a href="dev_info.html">Dev_Info</a></li>
+            <li>
+              <a class="dropdown-trigger" data-target="dropdown-page" href="#">
+                Admin or Member Page Demo<i class="material-icons right">arrow_drop_down</i>
+              </a>
+            </li>
+            <li><a href="login.html">Login | Register</a></li>
+          </ul>
+
+          <!--Dropdown-->
+          <ul id="dropdown-about" class="dropdown-content">
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="profile.html">Company Profile</a></li>
+            <li><a href="goal.html">Site Goals</a></li>
+          </ul>
+
+          <ul id="dropdown-job" class="dropdown-content">
+            <li><a href="job.html">Job Board</a></li>
+            <li><a href="jobsworkflow.html">Jobs Workflow</a></li>
+          </ul>
+
+          <ul id="dropdown-join" class="dropdown-content">
+            <li><a href="join.html">Join</a></li>
+            <li><a href="benefit.html">Benefit</a></li>
+            <li><a href="criteria.html">Criteria</a></li>
+          </ul>
+
+          <ul id="dropdown-page" class="dropdown-content">
+            <li><a href="admin_page.html">Admin Page</a></li>
+            <li><a href="member_page.html">Member Page</a></li>
+          </ul>
+
+        </div>
+      </nav>
+    </div>
+  
+    <!--SideNavbar-->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html"><i class="material-icons right">arrow_drop_down</i>About Us</a></li>
+      <li><a href="profile.html">‣   Company Profile</a></li>
+      <li><a href="goal.html">‣   Goals</a></li>
+      <li><a href="job.html"><i class="material-icons right">arrow_drop_down</i>Job Board</a></li>
+      <li><a href="jobsworkflow.html">‣   Jobs Worksflow</a></li>
+      <li><a href="join.html">Join</a></li>
+      <li><a href="benefit.html">‣   Benefit</a></li>
+      <li><a href="criteria.html">‣   Criteria</a></li>
+      <li><a href="structure.html">Organizational Structure</a></li>
+      <li><a href="dev_info.html">Dev_Info</a></li>
+      <li><a href="#page">Admin or Member Page Demo</a></li>
+      <li><a href="admin_page.html">‣   Admin Page</a></li>
+      <li><a href="member_page.html">‣   Member Page</a></li>
+      <li><a href="login.html">Login / Register</a></li>
+    </ul>
+
+    <!--Job Board-->
+    <div class="parallax-container">
+      <div class="parallax"><img class="responsive-img" src="img/board.png" width="70%"></div>
+    </div>
+    <div id="job" class="container job">
+      <h5 ><b>Jobs Board</b></h5>
+      <div class="right-align">
+        <a href=job_form.html class="btn small">Add<i class="material-icons left">add</i></a>
+        <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Filter by</a>
+        </a>
+        </div>
+        <ul id='dropdown1' class='dropdown-content'>
+          <li><a href="#!"><i class="material-icons">date_range</i>Date</a></li>
+          <li><a href="#!"><i class="material-icons">attach_money</i>Reward</a></li>
+          <li><a href="#!"><i class="material-icons">assessment</i>Rank</a></li>
+      </ul>
+      <br>
+      <div class="responsive-table">
+        <table>
+          <thead>
+            <tr>
+                <th>Name</th>
+                <th>Job Description</th>
+                <th>Time Limit</th>
+                <th>Reward List</th>
+                <th></th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><b>Wishing Statue's Quest</b></td>
+              <td>Get a coin from the Wishing Shop and "toss it in"… that is, turn it in here to make a wish.
+                <br>
+                • Minimum Rank: Platinum
+              </td>
+              <td>3 Days</td>
+              <td>+300 EXP
+                <br>
+                +400 Coin
+                <br>
+                +400 GP
+              </td>
+              <td><a href=#! class="btn small orange darken-4"><b>Take</b></a></td>
+            </tr>
+            <tr>
+              <td><b>Tlax's Quest</b></td>
+              <td>You help me? Please bring Tlax 3 Rabid Boar Teeth.
+                <br>
+                • Minimum Rank: Gold
+              </td>
+              <td>4 Days</td>
+              <td>+300 EXP
+                <br>
+                +300 Coin
+                <br>
+                +300 GP
+              </td>
+              <td><a href=#! class="btn small orange darken-4"><b>Take</b></a></td>
+            </tr>
+            <tr>
+              <td><b>Raask's Quest</b></td>
+              <td>Take out three of Galanoth's creatures to take the Lair.
+                <br>
+                • Minimum Rank: Silver
+              </td>
+              <td>6 Days</td>
+              <td>+200 EXP
+                <br>
+                +200 Coin
+                <br>
+                +200 GP
+              </td>
+              <td><a href=#! class="btn small orange darken-4"><b>Take</b></a></td>
+            </tr>
+            <tr>
+              <td><b>Professor Skulltz's Quests</b></td>
+              <td>Bring me the heads of 6 soldiers, or you'll find YOURS taking their place.
+                <br>
+                • Minimum Rank: Bronze
+              </td>
+              <td>7 Days</td>
+              <td>+100 EXP
+                <br>
+                +100 Coin
+                <br>
+                +100 GP
+              </td>
+              <td><a href=#! class="btn small orange darken-4"><b>Take</b></a></td>
+            </tr>
+            <tr>
+              <td><b>Old Man Yulgar's Quests</b></td>
+              <td>The Treeants have fruit we can eat, and the Shadowflame Scouts often carry canteens.
+                <br>
+                • Minimum Rank: Iron
+              </td>
+              <td>7 Days</td>
+              <td>+100 EXP
+                <br>
+                +100 Coin
+                <br>
+                +100 GP
+              </td>
+              <td><a href=#! class="btn small orange darken-4"><b>Take</b></a></td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+    </div>
+    </div>
+
+    <div class="center-align">
+      <ul class="pagination">
+        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+        <li class="active"><a href="#!">1</a></li>
+        <li class="waves-effect"><a href="#!">2</a></li>
+        <li class="waves-effect"><a href="#!">3</a></li>
+        <li class="waves-effect"><a href="#!">4</a></li>
+        <li class="waves-effect"><a href="#!">5</a></li>
+        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+      </ul>
+    </div>
+
+    <!--Footer-->
+    <footer class="blue-grey darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5 class="white-text"></h5>
+              <a href="#!" class="brand-logo"><img src="img/logo-1.png" width="300" height="63"></a>
+              <p class="grey-text text-lighten-4">Address :</p>
+              <p class="grey-text text-lighten-4">Guildhouse#1333</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Follow Us</h5>
+              <ul>
+                <img src="img/facebook.png" class="vertical-middle" width="15%"><img src="img/instagram.png" class="vertical-middle" width="15%"><img src="img/discord.png" class="vertical-middle" width="14%">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <div class="container">
+            <b>Made by Lisa Arief
+              All right reserved.</b>
+          </div>
+        </div>
+      </footer>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+      const sideNav = document.querySelectorAll('.sidenav');
+      M.Sidenav.init(sideNav,{});
+
+      const parallax = document.querySelectorAll('.parallax');
+      M.Parallax.init(parallax,{});
+
+      const scrollspy = document.querySelectorAll('.scrollspy');
+      M.ScrollSpy.init(scrollspy,{});
+
+      const dropdown = document.querySelectorAll('.dropdown-trigger')
+      M.Dropdown.init(dropdown,{});
+    </script>
+
+  </body>
+</html>
+
