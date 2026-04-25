@@ -10,7 +10,7 @@
 
     <link
       rel="icon"
-      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📌</text></svg>"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💼</text></svg>"
     />
     <link
       rel="stylesheet"
@@ -21,191 +21,247 @@
   </head>
 
   <body>
+    <!-- HERO -->
     <section id="main" class="center">
       <div id="particles-js"></div>
-      <div class="user_info">
+      <div class="user_info center">
         <h1 class="user_name">Lisa Arief.</h1>
-        <p>Computer Science Student</p>
-        <a href="#about" class="btn">About Me</a>
-        <a href="data/[CV] LISA ARIEF.pdf" class="btn" download target="_blank"
-          >Download CV</a
-        >
-      </div>
-
-      <div class="user_img">
-        <img src="images/lisa.png" alt="" />
+        <p class="animated-text" data-words="Software Engineer, Full-Stack Developer, Backend Developer, API Specialist">Software Engineer</p>
+        <p class="hero-tagline">Digital Solutions for Operations & Field Services</p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">Years Exp</span>
+          </div>
+        </div>
+        <div class="hero-btns">
+          <a href="#about" class="btn">About Me</a>
+          <a href="data/[CV] LISA ARIEF.pdf" class="btn" download target="_blank">Download CV</a>
+        </div>
       </div>
     </section>
 
     <div id="gradient-1"></div>
 
+    <!-- ABOUT -->
     <section class="about center" id="about">
       <img src="images/image.png" alt="" />
-      <div class="center">
+      <div class="about-content">
         <h1 class="about_heading">About</h1>
         <p class="justify">
-          Advance web developer in structuring, developing, and implementing
-          interactive website. Able to complete projects efficiently and satisfy
-          with attractive, user-friendly website. Possess great technological
-          expertise, important ability to perform well in a team, and have an
-          interest in design.
+          Software Engineer with 2+ years of experience building fullstack enterprise applications
+          using .NET, React, and Golang. Skilled in API integration, process automation, and system
+          optimization. Adept at delivering scalable, secure, and user-focused solutions. Eager to
+          contribute to high-impact projects in a growth-oriented team environment.
         </p>
+        <div class="contact-info">
+          <span><i class="fas fa-map-marker-alt"></i> East Jakarta, DKI Jakarta, Indonesia</span>
+          <span><i class="fas fa-envelope"></i> lisa.arief1020@gmail.com</span>
+          <span><i class="fas fa-phone"></i> +62 812 8065 0821</span>
+          <span><i class="fas fa-birthday-cake"></i> Year of Birth: 2000</span>
+        </div>
       </div>
     </section>
 
     <div id="gradient-2"></div>
 
+    <!-- EDUCATION -->
+    <section class="education" id="education">
+      <div class="edu-card">
+        <div class="edu-icon center">
+          <i class="fas fa-graduation-cap fa-3x"></i>
+        </div>
+        <div class="edu-details">
+          <p class="section-label">Education</p>
+          <h2>B.S. Computer Science</h2>
+          <p class="university">State University of Jakarta</p>
+          <p class="edu-period"><i class="fas fa-calendar-alt"></i> August 2018 — February 2023</p>
+          <p class="edu-gpa"><i class="fas fa-star"></i> GPA: 3.61 / 4.00</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="gradient-1"></div>
+
+    <!-- SKILLS -->
     <section class="skills center" id="skills">
-      <p class="skill_head">My Skills</p>
+      <p class="skill_head">Technical Skills</p>
       <div class="skill_box center">
         <div class="box">
-          <i class="fab fa-php fa-4x"></i>
-          <p>PHP</p>
+          <i class="fas fa-code fa-4x"></i>
+          <p>C# / .NET Core</p>
+          <p class="skill-sub">ASP.NET Core</p>
         </div>
         <div class="box">
-          <i class="fab fa-python fa-4x"></i>
-          <p>Python</p>
+          <i class="fas fa-server fa-4x"></i>
+          <p>Golang</p>
+          <p class="skill-sub">Gin Framework</p>
         </div>
         <div class="box">
           <i class="fab fa-js fa-4x"></i>
           <p>JavaScript</p>
         </div>
         <div class="box">
-          <i class="fa fa-cog fa-4x"></i>
-          <p>Web Development Framework</p>
-          <p>(CodeIgniter4 & Flask)</p>
+          <i class="fab fa-react fa-4x"></i>
+          <p>ReactJS</p>
+          <p class="skill-sub">React Native</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-database fa-4x"></i>
+          <p>PostgreSQL / MySQL</p>
+          <p class="skill-sub">MS SQL Server</p>
+        </div>
+        <div class="box">
+          <i class="fab fa-microsoft fa-4x"></i>
+          <p>Azure Cloud</p>
+          <p class="skill-sub">AKS · Event Hubs · API Mgmt</p>
+        </div>
+        <div class="box">
+          <i class="fas fa-chart-bar fa-4x"></i>
+          <p>Power BI</p>
+          <p class="skill-sub">BI &amp; Data Visualization</p>
+        </div>
+        <div class="box">
+          <i class="fab fa-git-alt fa-4x"></i>
+          <p>Git &amp; Postman</p>
         </div>
         <div class="box">
           <i class="fab fa-html5 fa-4x"></i>
-          <p>HTML</p>
-        </div>
-        <div class="box">
-          <i class="fab fa-css3-alt fa-4x"></i>
-          <p>CSS</p>
-        </div>
-        <div class="box">
-          <i class="fas fa-cube fa-4x"></i>
-          <p>Blender 3D Modelling</p>
-        </div>
-        <div class="box">
-          <i class="fas fa-desktop fa-4x"></i>
-          <p>Ms. Office</p>
+          <p>HTML5 / CSS3</p>
         </div>
       </div>
     </section>
 
-    <div id="gradient-1"></div>
+    <div id="gradient-2"></div>
 
-    <section class="projects center" id="projects">
-      <h1 class="project_heading">Projects</h1>
-      <div class="container center">
-        <div class="main_box center">
-          <div class="icon center">
-            <i class="fas fa-virus"></i>
-          </div>
-          <div class="box">
-            <h1>Expert System</h1>
-            <p>
-              Created web based expert system: for diagnosing hepatitis using
-              fuzzy logic with CodeIgniter.
-            </p>
+    <!-- EXPERIENCE + APPLICATIONS (grouped by company) -->
+    <section class="experience" id="experience">
+      <div class="experience-header center">
+        <h1 class="experience-title">Experience</h1>
+      </div>
+      <div class="timeline-container">
+        <div class="timeline">
 
-            <div class="links">
-              <a href="https://youtu.be/P59fGtPIZmM" target="_blank"
-                >Demo<i class="fas fa-arrow-right"></i
-              ></a>
+          <!-- Traktor Nusantara -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h2>Process Improvement &amp; Digital</h2>
+                  <p class="company"><i class="fas fa-building"></i> Traktor Nusantara, Jakarta</p>
+                </div>
+                <span class="date-badge">Nov 2023 — Present</span>
+              </div>
+              <ul class="exp-list">
+                <li>Integrated TRS with SAP S/4HANA via REST API (.NET &amp; ReactJS), eliminating duplicate Work Order creation across 4 departments and 16 branches — reducing data entry by 50% per cycle.</li>
+                <li>Built offline-capable mechanic attendance system across 16 branches, supporting ~300 mechanics in remote, low-connectivity areas.</li>
+                <li>Developed live telemetry dashboard (ReactJS &amp; .NET) monitoring ~600 battery units across ~40 enterprise clients with real-time location, charge status, and exportable reports.</li>
+                <li>Digitalized customer-issued inspection certificates using .NET &amp; ReactJS, enabling secure, verifiable document access and eliminating risk of physical loss or forgery.</li>
+                <li>Built Power BI reporting dashboard for 4 departments, centralizing data for cross-departmental performance tracking.</li>
+                <li>Delivered a digital parts marketing portal streamlining client communication and sales enablement across branches.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>.NET Core</span><span>ReactJS</span><span>SAP S/4HANA</span><span>Power BI</span><span>Azure</span><span>REST API</span>
+              </div>
+              <div class="app-delivered">
+                <div class="app-delivered-label">
+                  <i class="fas fa-rocket"></i>
+                  <span>Application Delivered</span>
+                </div>
+                <div class="app-delivered-card">
+                  <div class="app-dl-header">
+                    <div class="app-dl-icon center"><i class="fas fa-cogs"></i></div>
+                    <div>
+                      <strong class="app-dl-name">TRS — Traknus Rapid System</strong>
+                      <p class="app-dl-desc">An internal enterprise platform for managing heavy equipment service operations — covering the full work order lifecycle, field technician assignments, and service reporting. Built on a 26-microservice architecture deployed on Azure Kubernetes Service, with a ReactJS web portal and React Native mobile app serving field mechanics across 16 branches nationwide.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="main_box center">
-          <div class="icon center">
-            <i class="fas fa-paint-brush" aria-hidden="true"></i>
-          </div>
-          <div class="box">
-            <h1>Design UI/UX</h1>
-            <p>
-              Redesign News page of Kitabisa.com to make users feel more
-              emotionally involved with the campaign.
-            </p>
-
-            <div class="links">
-              <a
-                href="https://docs.google.com/presentation/d/1diHXhRz4EJC9uy8_NQCZJHHqhjtIBzX0Gqz3X3QG50U/edit#slide=id.p"
-                target="_blank"
-                >Demo<i class="fas fa-arrow-right"></i
-              ></a>
+          <!-- Steradian Data Optima -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h2>Backend Developer</h2>
+                  <p class="company"><i class="fas fa-building"></i> Steradian Data Optima, Jakarta</p>
+                </div>
+                <span class="date-badge">Apr 2023 — Nov 2023</span>
+              </div>
+              <ul class="exp-list">
+                <li>Developed a real-time Forex API service in Golang for QLola (Bank Rakyat Indonesia), enabling a large-scale user base to perform live foreign currency transactions seamlessly.</li>
+                <li>Implemented encryption for static data on a banking admin portal using Golang, enhancing data security and ensuring compliance with industry regulations.</li>
+                <li>Built an automated web crawler in Golang to fetch and update LPS interest rate data daily, ensuring accurate financial insights across the banking platform.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Golang</span><span>REST API</span><span>Encryption</span><span>Web Crawler</span>
+              </div>
+              <div class="app-delivered">
+                <div class="app-delivered-label">
+                  <i class="fas fa-rocket"></i>
+                  <span>Application Contributed To</span>
+                </div>
+                <div class="app-delivered-card">
+                  <div class="app-dl-header">
+                    <div class="app-dl-icon center"><i class="fas fa-university"></i></div>
+                    <div>
+                      <strong class="app-dl-name">QLola — Bank Rakyat Indonesia</strong>
+                      <p class="app-dl-desc">An integrated digital banking platform designed to help business clients manage their financial and operational activities more efficiently within a single ecosystem — enabling real-time forex transactions, cash flow monitoring, and seamless banking operations at scale.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="main_box center">
-          <div class="icon center">
-            <i class="fas fa-smoking"></i>
-          </div>
-          <div class="box">
-            <h1>Expert System</h1>
-            <p>
-              Created web based expert system: for diagnosing cancer in smokers
-              using forward-chaining method with PHP
-            </p>
-
-            <div class="links">
-              <a
-                href="https://github.com/lisarief100200/fc-sispak-php"
-                target="_blank"
-                >Github Repo<i class="fas fa-arrow-right"></i
-              ></a>
+          <!-- BFI Finance -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h2>Programmer Learning Technology</h2>
+                  <p class="company"><i class="fas fa-building"></i> PT BFI Finance Indonesia, Tangerang</p>
+                </div>
+                <span class="date-badge">Jan 2023 — Apr 2023</span>
+              </div>
+              <ul class="exp-list">
+                <li>Designed and developed a company-wide Power BI dashboard to monitor employee training activities across branches, enabling the People Development team to track and evaluate programs more effectively.</li>
+              </ul>
+              <div class="tech-tags">
+                <span>Power BI</span><span>Data Visualization</span>
+              </div>
+              <div class="app-delivered">
+                <div class="app-delivered-label">
+                  <i class="fas fa-rocket"></i>
+                  <span>Application Delivered</span>
+                </div>
+                <div class="app-delivered-card">
+                  <div class="app-dl-header">
+                    <div class="app-dl-icon center"><i class="fas fa-chart-bar"></i></div>
+                    <div>
+                      <strong class="app-dl-name">Training Activity Dashboard</strong>
+                      <p class="app-dl-desc">A company-wide Power BI dashboard that centralizes and visualizes employee training activities across all branches. Enables the People Development team to monitor program participation, track completion rates, and evaluate learning effectiveness at an organizational level — replacing manual reporting with real-time, interactive insights.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="main_box center">
-          <div class="icon center">
-            <i class="fas fa-utensils"></i>
-          </div>
-          <div class="box">
-            <h1>Food Ordering System</h1>
-            <p>
-              Programming Tasks: Created web based application for food ordering
-              using Flask (Python)
-            </p>
-
-            <div class="links">
-              <a
-                href="https://github.com/lisarief100200/perancis113_fix"
-                target="_blank"
-                >Github Repo<i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="main_box center">
-          <div class="icon center">
-            <i class='fas fa-book-open'></i>
-          </div>
-          <div class="box">
-            <h1>Quran Saku</h1>
-            <p>
-              Created mobile application that will display surahs and verses 
-              of the Qur'an and play audio with API using Kotlin.
-            </p>
-
-            <div class="links">
-              <a
-                href="https://github.com/lisarief100200/QuranSaku"
-                target="_blank"
-                >Github Repo<i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
+    <!-- FOOTER -->
     <footer class="center">
       <h1>Contact Me</h1>
+      <p class="footer-sub">lisa.arief1020@gmail.com &nbsp;·&nbsp; +62 812 8065 0821</p>
       <div class="social_media_icons">
         <a href="https://github.com/lisarief100200" target="_blank"
           ><i class="fab fa-github"></i
@@ -213,10 +269,13 @@
         <a href="https://www.instagram.com/licloneea" target="_blank"
           ><i class="fab fa-instagram"></i
         ></a>
+        <a href="mailto:lisa.arief1020@gmail.com"
+          ><i class="fas fa-envelope"></i
+        ></a>
       </div>
     </footer>
 
-    <!-- Toggle -->
+    <!-- Navigation Toggle -->
     <div class="toggle center active" id="toggle">
       <div class="box center">
         <a href="#main" class="links center">
@@ -230,15 +289,19 @@
           <p>About</p>
         </a>
         <input type="checkbox" name="" id="btn" />
+        <a href="#education" class="links center">
+          <i class="fas fa-graduation-cap"></i>
+          <p>Edu</p>
+        </a>
+      </div>
+      <div class="box center">
         <a href="#skills" class="links center">
           <i class="fas fa-sliders-h"></i>
           <p>Skills</p>
         </a>
-      </div>
-      <div class="box">
-        <a href="#projects" class="links center">
-          <i class="fas fa-tasks"></i>
-          <p>Projects</p>
+        <a href="#experience" class="links center" style="margin-left:0.6em;">
+          <i class="fas fa-briefcase"></i>
+          <p>Work</p>
         </a>
       </div>
     </div>
