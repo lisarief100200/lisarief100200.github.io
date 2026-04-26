@@ -92,24 +92,32 @@ body {
     margin-bottom: 1em;
 }
 
-#main .animated-text {
-    color: var(--accent-color);
-    -webkit-text-fill-color: var(--accent-color);
+#main .star-glow-text {
     font-size: 1.5em;
-    height: 2em;
-    margin-bottom: 0.4em;
     font-weight: 600;
+    color: #bfdbfe;
+    -webkit-text-fill-color: #bfdbfe;
+    margin-bottom: 0.4em;
+    animation: starGlow 2.8s ease-in-out infinite;
 }
 
-.animated-text span {
-    opacity: 0;
-    transition: opacity 0.05s;
-    color: var(--accent-color);
-    -webkit-text-fill-color: var(--accent-color);
-}
-
-.animated-text span.active {
-    opacity: 1;
+@keyframes starGlow {
+    0%, 100% {
+        color: #bfdbfe;
+        -webkit-text-fill-color: #bfdbfe;
+        text-shadow:
+            0 0 8px rgba(96, 165, 250, 1),
+            0 0 20px rgba(96, 165, 250, 0.7),
+            0 0 45px rgba(59, 130, 246, 0.5),
+            0 0 90px rgba(37, 99, 235, 0.25);
+    }
+    50% {
+        color: #60a5fa;
+        -webkit-text-fill-color: #60a5fa;
+        text-shadow:
+            0 0 3px rgba(96, 165, 250, 0.3),
+            0 0 8px rgba(59, 130, 246, 0.15);
+    }
 }
 
 #main .hero-tagline {
